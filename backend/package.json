@@ -1,0 +1,30 @@
+{
+  "name": "pizza_vista",
+  "version": "1.0.0",
+  "description": "pizza vista backend",
+  "main": "backend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ../frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\" ",
+    "data:import": "node seeder.js"
+  },
+  "author": "Javeria",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "colors": "^1.4.0",
+    "concurrently": "^7.2.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.4",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16",
+    "react-icons": "^4.3.1",
+    "react-scroll": "^1.8.7"
+  }
+}

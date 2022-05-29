@@ -1,0 +1,129 @@
+/* Root colors */
+:root {
+    --main_color: #D3411F;
+}
+
+/* Html scroll behaviour set to smooth  */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Height Margin is given so when user scroll from navbar, so some height and margin would be there*/
+:target:before {
+    content: "";
+    display: block;
+    height: 140px;
+    margin: -140px 0 0;
+}
+
+/* Font is taken from Google font api, link is added to index.html */
+body {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Navbar starts*/
+.inline{
+    max-width: 300px;
+}
+
+.navbar-toggler {
+    font-size: 14px;
+}
+
+.navbar-logo img {
+    width: 5rem;
+}
+
+.nav-link {
+    /* used display flex and align-items-center for all nav links, to make them separate when transitioning to upward while scrolling  */
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0rem 1.5rem 0rem 1.5rem;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid #fff;
+    transition: all 0.2s ease-out;
+}
+
+a.text-light:hover {
+    color: #fff!important;
+}
+
+nav ul li {
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+
+.color-orange{
+   background : #D3411F;
+   box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.99);
+   border: none;
+
+}
+
+/* When click on dropdown menu, it will translateY through this below animation code*/
+
+/* Start of Dropdown Animation  */
+
+.navbar-dropdown-animate {
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: transform;
+        -webkit-opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+
+    0% {
+        -webkit-transform: translateY(1rem);
+        -webkit-opacity: 0;
+    }
+}
+
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
+
+/* End of Dropdown Animation  */
+/* Navbar ends  */
+
+.btn:hover, .btn:active{
+    background-color: #c02907 !important;
+}
+
+.cart-hover:hover{
+    color: var(--main_color)
+}
