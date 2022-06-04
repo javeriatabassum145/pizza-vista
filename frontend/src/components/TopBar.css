@@ -69,6 +69,15 @@ nav ul li {
 
 }
 
+.open > a{
+    color: var(--main_color);
+}
+
+.open > a:focus,
+.open > a:hover{
+     background-color: var(--main_color);
+color: white; 
+cursor: pointer;}
 /* When click on dropdown menu, it will translateY through this below animation code*/
 
 /* Start of Dropdown Animation  */
