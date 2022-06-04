@@ -23,7 +23,7 @@ const Pizza= ({ pizza }) => {
               <div className="col-md-6">
                 {/* <h6>Varients</h6> */}
                 <select
-                  class="custom-select"
+                  className="custom-select"
                   value={varient}
                   onChange={(e) => setVarient(e.target.value)}
                 >
@@ -34,11 +34,11 @@ const Pizza= ({ pizza }) => {
               </div>
               <div className="col-md-6">
                 <select
-                  class="custom-select"
+                  className="custom-select"
                   value={quantity}
                   onChange={(e) => setQuantity(e.target.value)}
                 >
-                  {[...Array(30).keys()].map((v, i) => (
+                  {[...Array(20).keys()].map((v, i) => (
                     <option value={i + 1}>{i + 1}</option>
                   ))}
                 </select>

@@ -24,6 +24,8 @@ body {
 }
 
 /* Navbar starts*/
+
+
 .inline{
     max-width: 300px;
 }
@@ -41,7 +43,7 @@ body {
     display: flex;
     align-items: center;
     height: 100%;
-    margin: 0rem 1.5rem 0rem 1.5rem;
+    margin: 0rem 1rem 0rem 1rem;
 }
 
 .nav-link:hover {

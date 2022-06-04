@@ -4,7 +4,7 @@ export const getAllPizzas = () => async(dispatch) =>  {
     dispatch({type:'GET_PIZZA_REQUEST'})
     try{
         const res = await axios.get('/api/pizzas/getPizzas')
-        console.log(res)
+        // console.log(res)
     dispatch({type:'GET_PIZZA_SUCCESS',payload:res.data})
 
     }

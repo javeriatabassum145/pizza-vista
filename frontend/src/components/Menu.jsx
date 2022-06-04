@@ -16,27 +16,38 @@ const Menu = () => {
   return (
     <>
       <div id="menu">
-        <header class="section-header text-center mt-5 pt-5 pb-4">
+        <header className="section-header text-center mt-5 pt-5 pb-4">
           <h2>Menu</h2>
         </header>
         <div className="container">
-          {loading ? (
-            <h1>Loading ...</h1>
-          ) : error ? (
-            <h1>Error while fetchig pizzas</h1>
-          ) : (
-            <div className="row">
-              {pizzas.map((pizza) => (
-                <div className="col-md-4">
-                  <Pizza pizza={pizza} />
-                </div>
-              ))}
-            </div>
-          )}
+        {loading ? (
+    <div className="d-flex justify-content-center align-items-center">
+      <div className="spinner-grow text-orange mx-2" role="status">
+        <span className="sr-only">Loading...</span>
+      </div>
+      <div className="spinner-grow text-orange mx-2" role="status">
+        <span className="sr-only">Loading...</span>
+      </div>
+      <div className="spinner-grow text-orange mx-2" role="status">
+        <span className="sr-only">Loading...</span>
+      </div>
+    </div>
+  ) : error ? (
+    <h1>Error while fetchig pizzas</h1>
+  ) : (
+    <div className="row">
+      {pizzas.map((pizza) => (
+        <div className="col-md-4">
+          <Pizza pizza={pizza} />
+        </div>
+      ))}
+    </div>
+  )}
         </div>
       </div>
     </>
   );
 };
+
 
 export default Menu;
