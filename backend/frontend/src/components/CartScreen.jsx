@@ -13,9 +13,9 @@ const CartScreen = () => {
     <>
       <div className="container my-5 py-5">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6" data-aos="fade-right">
             <h1 className="text-orange">Cart Items</h1>
-            <div className="row">
+            <div className="row" >
               {cartItems.map((item) => (
                 <>
                   <div className="col-md-6 text-center">
@@ -85,7 +85,7 @@ const CartScreen = () => {
             <hr />
           </div>
 
-          <div className="col-md-4 mx-3">
+          <div className="col-md-4 mx-3" data-aos="fade-left">
             <h1 className="text-orange">Payment Info</h1>
             <h4 className="my-3">Sub Total</h4>
             <h5 className="my-3">Rs : {subTotal}</h5>

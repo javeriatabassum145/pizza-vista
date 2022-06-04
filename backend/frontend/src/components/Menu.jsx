@@ -20,7 +20,7 @@ const Menu = () => {
         <header className="section-header text-center mt-5 pt-5 pb-4">
           <h2>Menu</h2>
         </header>
-        <div className="container">
+        <div className="container" data-aos="fade-right">
           {loading ? (
             <div className="d-flex justify-content-center align-items-center">
               <div className="spinner-grow text-orange mx-2" role="status">
