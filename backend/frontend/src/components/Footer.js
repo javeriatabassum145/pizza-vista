@@ -34,7 +34,7 @@ const Footer = () => {
   </div>
   <section class="copyright">
         <div class="col-lg-12 text-center">
-          <p>Copyright © 2021. All Rights Reserved.</p>
+          <p>Copyright © 2022. All Rights Reserved.</p>
     </div>
   </section>
 </footer>
