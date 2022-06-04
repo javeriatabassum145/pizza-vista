@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "pizza vista backend",
   "main": "backend.js",
+  "engines": {
+    "node": "16.14.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\" ",
-    "data:import": "node seeder.js"
+    "data:import": "node seeder.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "Javeria",
   "license": "MIT",
