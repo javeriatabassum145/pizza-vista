@@ -1,12 +1,17 @@
 import React, {useState} from "react";
 import {useSelector,useDispatch} from 'react-redux'
 import {registerUser} from '../actions/userAction'
+import Success from "./Success";
+import Error from "./Error"
+
 
 const Register = () => {
     const [name, setName] = useState('');
     const [number, setNumber] = useState('');
     const [email, setEmail] = useState(''); 
     const [password, setPassword] = useState('');
+const registerState = useSelector(state => state.registerUserReducer)
+const {error, success, loading} = registerState
 
     const dispatch =useDispatch()
 
@@ -18,8 +23,13 @@ const Register = () => {
   return (
     <>
        <div className="container">
+
         <div className="row d-flex justify-content-center mt-5 pt-5">
           <div className="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+          {success && <Success success={"User Register Successfully"}/>}
+
+        {error && <Error error="Something went wrong"/>}
+        
               <header className="section-header text-center pb-4">
                 <h2>Register Now</h2>
               </header>

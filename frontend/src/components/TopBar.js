@@ -63,7 +63,7 @@ const TopBar = () => {
             {/* <!-- Cart  -->  */}
             <li className="nav-item">
               <Link
-                className="nav-link cart-hover text-orange bg-white rounded px-3"
+                className="nav-link cart-hover text-orange bg-white rounded px-2"
                 to="/cart"
               >
                 <i
@@ -73,7 +73,7 @@ const TopBar = () => {
                 Cart : {cartState.cartItems.length}
               </Link>
             </li>
-
+<br/>
             {currentUser ? (
               <>
                 <div class="dropdown">

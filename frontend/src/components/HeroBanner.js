@@ -20,7 +20,7 @@ const HeroBanner = () => {
           {/* <!-- Banner button of learn more  --> */}
           <a
             type="button"
-            href="#about"
+            href="/menu"
             className="btn-hero-banner aos-init"
             data-aos="fade-up"
             data-aos-offset="30"

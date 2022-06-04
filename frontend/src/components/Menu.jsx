@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllPizzas } from "../actions/pizzaAction";
 import Pizza from "../components/Pizza";
 import "./Menu.css";
+import Error from '../components/Error'
 
 const Menu = () => {
   const dispatch = useDispatch();
@@ -33,7 +34,7 @@ const Menu = () => {
       </div>
     </div>
   ) : error ? (
-    <h1>Error while fetchig pizzas</h1>
+    <Error>Error while fetchig pizzas {error}</Error>
   ) : (
     <div className="row">
       {pizzas.map((pizza) => (

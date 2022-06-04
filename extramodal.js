@@ -2,7 +2,6 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { FaMinusCircle, FaPlusCircle, FaTrash } from "react-icons/fa";
 import { addToCart, deleteFromCart } from "../actions/cartAction";
-import Checkout from "./Checkout";
 
 const CartScreen = () => {
   const cartState = useSelector((state) => state.cartReducer);
@@ -89,21 +88,71 @@ const CartScreen = () => {
             <h1 className="text-orange">Payment Info</h1>
             <h4 className="my-3">Sub Total</h4>
             <h5 className="my-3">Rs : {subTotal}</h5>
+
             <a
               className="btn btn-primary my-3 color-orange"
               data-toggle="modal"
-              data-target="#exampleModalCenter"
-              id="checkout"
-              onClick={() => {
-                if (cartItems == 0) {
-                  alert("Please add something into your cart.");
-                  window.location.href = "/menu";
-                }
-              }}
+              data-target="#exampleModal"
             >
               Checkout
             </a>
-            <Checkout></Checkout>
+          </div>
+
+          {/* <!-- Modal --> */}
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Order Confirmation
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                {cartItems != 0 ? (
+                  <div class="modal-body">
+                    Order has been placed. Thank you for choosing us. We will
+                    contact for the confirmation soon.
+                  </div>
+                ) : (
+                  <div class="modal-body">
+                    Please add something into your cart.
+                  </div>
+                )}
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn color-orange text-light"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button
+                    type="button"
+                    class="btn color-orange text-light"
+                    onClick={() => {
+                      localStorage.removeItem("cartItems");
+                      window.location.href = "/";
+                    }}
+                  >
+                    OK
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
