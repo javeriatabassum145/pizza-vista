@@ -1,0 +1,183 @@
+
+/* About section starts */
+
+.d-flourish {
+    position: absolute;
+}
+
+.d-flourish.one {
+    top: -4rem;
+    left: 48%;
+    background-color: var(--main_color);
+}
+
+.d-flourish.three {
+    bottom: -4rem;
+    left: 48%;
+    background-color: var(--main_color);
+}
+
+.d-flourish {
+    border-radius: 2px;
+    display: block;
+    height: 25px;
+    position: relative;
+    -webkit-transform: skew(0deg, -30deg);
+    -ms-transform: skew(0deg, -30deg);
+    transform: skew(0deg, -30deg);
+    width: 50px;
+    z-index: 100;
+    animation: mymove 1s;
+    animation-fill-mode: forwards;
+}
+
+/* Skewed box animated when website starts  */
+@keyframes mymove {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 50px
+    }
+}
+
+.about-container {
+    position: relative;
+    margin: -30px 5rem;
+    box-shadow: 0px 0px 80px 3px rgba(247, 167, 110, 0.99);
+}
+
+.about-heading {
+    letter-spacing: 3px;
+    text-shadow: 1.5px 0 #000;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 2rem;
+    padding: 0rem 2rem;
+}
+
+.jumbotron {
+    padding: 3rem 1.5rem;
+}
+
+/* About section end  */
+
+
+/* Section css which are used above the heading of each section  */
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-header {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+    color: #4154f1;
+    text-transform: uppercase;
+}
+
+.section-header p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 700;
+    color: var(--main_color);
+}
+
+/* Section css end  */
+
+
+/* Features starts */
+.features-heading {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-shadow: 2px 0 #fff;
+    color: #fff;
+}
+
+.feature-div {
+    background-color: var(--main_color);
+    /* background: url('/images/pricing.jpg'); */
+    margin: -30px 0rem;
+}
+
+
+/* Contact starts  */
+.form-input {
+    margin-bottom: 25px;
+}
+
+.contact .info-box {
+    color: #444444;
+    background: #fafbff;
+    padding: 30px;
+    margin-bottom: 2rem;
+}
+
+.contact-heading {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-shadow: 2px 0 #fff;
+    color: #fff;
+}
+
+.contact .info-box i {
+    font-size: 38px;
+    line-height: 0;
+}
+
+.contact .info-box h3 {
+    font-size: 20px;
+    color: var(--main_color);
+    font-weight: 700;
+    margin: 20px 0 10px 0;
+}
+
+.contact .info-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.contact-form {
+    background: #fafbff;
+    padding: 30px;
+    height: 100%;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    font-size: 14px;
+    border-radius: 0;
+}
+
+.contact .contact-form input {
+    padding: 10px 15px;
+}
+
+.contact .contact-form textarea {
+    padding: 12px 15px;
+}
+
+
+/* Contact end  */

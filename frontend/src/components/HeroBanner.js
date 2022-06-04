@@ -1,4 +1,7 @@
 import React from "react";
+import About from "./About";
+import Branches from "./Branches";
+import Footer from "./Footer";
 import "./HeroBanner.css";
 
 const HeroBanner = () => {
@@ -34,6 +37,9 @@ const HeroBanner = () => {
           <img src="/images/pizza1.png" className="" alt="" />
         </div>
       </div>
+      <About/>
+      <Branches/>
+      <Footer/>
     </>
   );
 };

@@ -1,7 +1,8 @@
 import "./App.css";
 import TopBar from "./components/TopBar.js";
 import HeroBanner from "./components/HeroBanner";
-import Menu from "./components/Menu"
+import Menu from "./components/Menu";
+import About from "./components/About"
 import Register from "./components/Register";
 import Login from "./components/Login";
 import { BrowserRouter, Route, Switch } from "react-router-dom";

@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllPizzas } from "../actions/pizzaAction";
 import Pizza from "../components/Pizza";
 import "./Menu.css";
-import Error from '../components/Error'
+import Error from "../components/Error";
 
 const Menu = () => {
   const dispatch = useDispatch();
@@ -21,34 +21,33 @@ const Menu = () => {
           <h2>Menu</h2>
         </header>
         <div className="container">
-        {loading ? (
-    <div className="d-flex justify-content-center align-items-center">
-      <div className="spinner-grow text-orange mx-2" role="status">
-        <span className="sr-only">Loading...</span>
-      </div>
-      <div className="spinner-grow text-orange mx-2" role="status">
-        <span className="sr-only">Loading...</span>
-      </div>
-      <div className="spinner-grow text-orange mx-2" role="status">
-        <span className="sr-only">Loading...</span>
-      </div>
-    </div>
-  ) : error ? (
-    <Error>Error while fetchig pizzas {error}</Error>
-  ) : (
-    <div className="row">
-      {pizzas.map((pizza) => (
-        <div className="col-md-4">
-          <Pizza pizza={pizza} />
-        </div>
-      ))}
-    </div>
-  )}
+          {loading ? (
+            <div className="d-flex justify-content-center align-items-center">
+              <div className="spinner-grow text-orange mx-2" role="status">
+                <span className="sr-only">Loading...</span>
+              </div>
+              <div className="spinner-grow text-orange mx-2" role="status">
+                <span className="sr-only">Loading...</span>
+              </div>
+              <div className="spinner-grow text-orange mx-2" role="status">
+                <span className="sr-only">Loading...</span>
+              </div>
+            </div>
+          ) : error ? (
+            <Error>Error while fetchig pizzas {error}</Error>
+          ) : (
+            <div className="row">
+              {pizzas.map((pizza) => (
+                <div className="col-md-4">
+                  <Pizza pizza={pizza} />
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </>
   );
 };
-
 
 export default Menu;

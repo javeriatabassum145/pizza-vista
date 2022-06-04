@@ -5,7 +5,7 @@ import React from "react";
 import "./TopBar.css";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import {logoutUser} from '../actions/userAction'
+import { logoutUser } from "../actions/userAction";
 
 const TopBar = () => {
   const dispatch = useDispatch();
@@ -54,11 +54,11 @@ const TopBar = () => {
             </li>
 
             {/* <!-- Contact  --> */}
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link className="nav-link text-light" to="/contact">
                 Contact Us
               </Link>
-            </li>
+            </li> */}
 
             {/* <!-- Cart  -->  */}
             <li className="nav-item">
@@ -73,7 +73,7 @@ const TopBar = () => {
                 Cart : {cartState.cartItems.length}
               </Link>
             </li>
-<br/>
+            <br />
             {currentUser ? (
               <>
                 <div class="dropdown">
@@ -86,11 +86,19 @@ const TopBar = () => {
                   >
                     {currentUser.name}
                   </a>
-                  <div class="dropdown-menu open" aria-labelledby="dropdownMenuLink">
+                  <div
+                    class="dropdown-menu open"
+                    aria-labelledby="dropdownMenuLink"
+                  >
                     <a class="dropdown-item" href="#">
                       Order
                     </a>
-                    <a class="dropdown-item" onClick={() => {dispatch(logoutUser())}}>
+                    <a
+                      class="dropdown-item"
+                      onClick={() => {
+                        dispatch(logoutUser());
+                      }}
+                    >
                       Logout
                     </a>
                   </div>

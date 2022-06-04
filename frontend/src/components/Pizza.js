@@ -14,7 +14,7 @@ const Pizza= ({ pizza }) => {
     return (
       <>
         <div className="card m-3" style={{ width: "18rem"}}>
-          <img src={pizza.image} className="card-img-top" style={{height: "10rem" }} alt="..." />
+          <img src={pizza.image} className="card-img-top" style={{height: "13rem" }} alt="..." />
           <div className="card-body">
             <h5 className="card-title">{pizza.name}</h5>
             <hr />
