@@ -21,7 +21,7 @@ const Branches = () => {
     <div className="row gy-4">
       <div className="col-lg-12">
         <div className="row gy-4">
-          <div className="col-sm-6 px-5">
+          <div className="col-lg-6 px-5">
             <div className="info-box" data-aos="zoom-in">
               <i className="text-orange fa fa-map-marker"></i>
               <h3>Address</h3>
@@ -32,7 +32,7 @@ const Branches = () => {
             </div>
           </div>
 
-          <div className="col-sm-6 px-5">
+          <div className="col-lg-6 px-5">
             <div className="info-box" data-aos="zoom-in">
             <i className="text-orange fa fa-phone"></i>
 
@@ -41,7 +41,7 @@ const Branches = () => {
             </div>
           </div>
 
-          <div className="col-sm-6 px-5">
+          <div className="col-lg-6 px-5">
             <div className="info-box" data-aos="zoom-in">
             <i className="text-orange fa fa-envelope"></i>
 
@@ -50,7 +50,7 @@ const Branches = () => {
             </div>
           </div>
 
-          <div className="col-sm-6 px-5">
+          <div className="col-lg-6 px-5">
             <div className="info-box" data-aos="zoom-in">
             <i className="text-orange fa fa-clock-o"></i>
 
