@@ -21,10 +21,10 @@ const Footer = () => {
             <a href="https://www.twitter.com" target="_blank"><img src="/images/twitter.png" alt=""/></a>
 
             {/* <!-- Linkedin  --> */}
-            <a href="https://www.linkedin.com" target="_blank"><img src="/images/linkedin.png" alt=""/></a>
+            <a href="https://www.whatsapp.com" target="_blank"><img src="/images/linkedin.png" alt=""/></a>
 
             {/* <!-- Github  --> */}
-            <a href="https://www.github.com" target="_blank"><img src="/images/github.png" alt=""/></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="/images/github.png" alt=""/></a>
           </div>
         </div>
       </div>

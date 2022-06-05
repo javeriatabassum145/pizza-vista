@@ -6,7 +6,7 @@ const Checkout = () => {
   const [emailadd, setEmailadd] = useState("");
   const [address, setAddress] = useState("");
   const [inst, setInst] = useState("");
-  const [cartItems, setCartitems] = useState(localStorage.getItem("cartItems"));
+  const [cartItems, setCartitems] = useState(JSON.parse(localStorage.getItem('cartItems')));
   const customerState = useSelector((state) => state.placeOrderReducer);
   const { error, success, loading } = customerState;
 
