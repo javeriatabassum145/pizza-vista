@@ -11,6 +11,9 @@ const customerSchema = mongoose.Schema({
     },
     inst:{
         type:String,
+    },
+    cartItems:{
+        type:String
     }
 },{timeStamps:true})
 

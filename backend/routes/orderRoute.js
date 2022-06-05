@@ -5,8 +5,8 @@ const Customer = require('../models/customerModel')
 
 router.post('/placeorder', async (req,res) => {
     
-    const {emailadd, address, inst} = req.body
-    const customer = new Customer({emailadd, address, inst})
+    const {emailadd, address, inst, cartItems} = req.body
+    const customer = new Customer({emailadd, address, inst, cartItems})
     try {
         customer.save()
         res.status(200).json({

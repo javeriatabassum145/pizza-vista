@@ -9,6 +9,7 @@ const CartScreen = () => {
   const cartItems = cartState.cartItems;
   const dispatch = useDispatch();
   const subTotal = cartItems.reduce((x, item) => x + item.price, 0);
+
   return (
     <>
       <div className="container my-5 py-5">

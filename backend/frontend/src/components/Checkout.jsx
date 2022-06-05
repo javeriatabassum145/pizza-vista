@@ -1,23 +1,32 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { placeOrder } from "../actions/orderAction";
-import CartScreen from "../components/CartScreen";
 
 const Checkout = () => {
   const [emailadd, setEmailadd] = useState("");
   const [address, setAddress] = useState("");
   const [inst, setInst] = useState("");
+  const [cartItems, setCartitems] = useState(localStorage.getItem("cartItems"));
   const customerState = useSelector((state) => state.placeOrderReducer);
   const { error, success, loading } = customerState;
 
   const dispatch = useDispatch();
 
   const orderHandler = () => {
-    const order = { emailadd, address, inst };
+    const order = { emailadd, address, inst, cartItems };
     dispatch(placeOrder(order));
     setEmailadd("");
     setAddress("");
     setInst("");
+    localStorage.removeItem("cartItems");
+    if (emailadd != 0 && address != 0) {
+      alert(
+        "Order has been placed. Thank you for choosing us. We will contact for the confirmation soon."
+      );
+      window.location.href = "/";
+    } else {
+      alert("Please fill the fields.");
+    }
   };
 
   return (
@@ -99,20 +108,7 @@ const Checkout = () => {
                 type="button"
                 class="btn text-light color-orange"
                 id="place"
-                onClick={
-                  (orderHandler,
-                  () => {
-                    localStorage.removeItem("cartItems");
-                    if (emailadd != 0 && address != 0) {
-                      alert(
-                        "Order has been placed. Thank you for choosing us. We will contact for the confirmation soon."
-                      );
-                      window.location.href = "/";
-                    } else {
-                      alert("Please fill the fields.");
-                    }
-                  })
-                }
+                onClick={orderHandler}
               >
                 Place Order
               </button>
