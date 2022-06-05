@@ -1,0 +1,337 @@
+@media only screen and (max-width:992px) {
+
+    /* Navbar starts */
+    .navbar-nav {
+        background-color: #14244cfc;
+        z-index: 1;
+    }
+
+    .nav-link {
+        padding: 1.5rem 0rem 1.5rem 0rem;
+    }
+
+    .nav-link:hover {
+        border-bottom: none;
+    }
+    /* Navbar end  */
+
+    /* Hero-Banner starts  */
+    .hero-picture {
+        width: 700px;
+        height: 600px;
+    }
+
+    .hero-banner-text {
+        width: 400px;
+        height: 500px;
+        margin: 9rem 0rem 1rem 2rem;
+    }
+
+    .banner-heading {
+        font-size: 55px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-shadow: 2px 0 #fff;
+        color: #fff;
+    }
+
+    .banner-sub-heading {
+        font-size: 1rem;
+    }
+    /* Hero Banner end  */
+}
+
+@media only screen and (max-width: 800px) and (min-width:500px) {
+
+    /* Hero Banner starts */
+    .hero-picture {
+        width: 600px;
+        height: 550px;
+        margin: 6rem -50rem 0rem 3rem;
+    }
+
+    .hero-banner-text {
+        width: 300px;
+        height: 400px;
+        margin: 9rem 0rem 1rem 2rem;
+    }
+
+    .btn-hero-banner {
+        padding: 0.8rem 2rem;
+    }
+
+    .btn-hero-banner {
+        font-size: small;
+        letter-spacing: 0px;
+        font-weight: 200;
+    }
+    /* Hero Banner end  */
+}
+
+@media only screen and (max-width:500px) {
+
+    /* Navbar starts */
+    .navbar img {
+        width: 10rem;
+    }
+    /* Navbar end  */
+
+    /* Hero-banner starts */
+    .banner {
+        height: 600px;
+    }
+
+    .hero-banner-text {
+        width: 300px;
+        height: 400px;
+        margin: 7rem 2rem 0rem 3rem;
+    }
+
+    .hero-picture {
+        display: none;
+    }
+
+    .banner-heading {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .banner-sub-heading {
+        font-size: 0.9rem;
+        font-weight: 200;
+    }
+
+    .btn-hero-banner {
+        padding: 0.8rem 2rem;
+    }
+
+    .btn-hero-banner {
+        font-size: small;
+        letter-spacing: 0px;
+        font-weight: 200;
+    }
+    /* Hero Banner end  */
+}
+
+@media only screen and (max-width:650px) {
+
+    .about-container {
+        margin: -30px 2.5rem;
+    }
+
+    .about-text {
+        font-size: 14px;
+        font-weight: 150;
+        line-height: 1.5rem;
+        padding: 0rem 0.2rem;
+    }
+    /* about end  */
+
+    /* Section css starts  */
+    .section-header p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .section-header {
+        padding-bottom: 30px;
+    }
+
+    .list-unstyled {
+        margin: auto;
+    }
+    /* Section css end  */
+
+    /* Request a quote starts  */
+    .request-box h3 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .request {
+        padding: 30px 40px;
+    }
+    /* Request quote end  */
+
+    /* Footer starts  */
+    footer.nb-footer .about .social-media a img {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 1rem 1rem;
+    }
+
+    footer.nb-footer .footer-info-single {
+        margin-top: 50px;
+        padding: 0px 30px;
+    }
+    /* Footer end  */
+
+    /* Pricing Calculator starts  */
+    .range {
+        /* width: 120px; */
+        display: none;
+    }
+    /* Pricing Calculator end  */
+}
+
+
+@media only screen and (max-width:370px) {
+
+    /* Navbar starts */
+    .navbar img {
+        width: 10rem;
+    }
+    /* Navbar end  */
+
+    /* Hero-banner  */
+    .banner {
+        height: 600px;
+    }
+
+    .hero-banner-text {
+        width: 300px;
+        height: 400px;
+        margin: 7rem 1rem 0rem 2rem;
+    }
+
+    .hero-picture {
+        display: none;
+    }
+
+    .banner-heading {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .banner-sub-heading {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .btn-hero-banner {
+        padding: 0.8rem 2rem;
+    }
+
+    .btn-hero-banner {
+        font-size: 1rem;
+        letter-spacing: 0px;
+        font-weight: 200;
+    }
+    /* Hero Banner end  */
+
+    /* About starts*/
+    .about-container {
+        margin: -30px 1rem;
+    }
+
+    .about-text {
+        font-size: 14px;
+        font-weight: 150;
+    }
+    /* About end  */
+
+    /* Section css starts  */
+    .section-header h2 {
+        font-size: 10px;
+    }
+    /* Section css end  */
+
+    /* Pricing Calculator starts  */
+    .box-pricing {
+        padding: 2px;
+    }
+    
+    .slider-header div,
+    .log-types,
+    input::placeholder,
+    .pricing-table span,
+    .total-days label,
+    .total-gb label,
+    .form-group label,
+    .btn-send {
+        font-size: 14px;
+    }
+    /* Pricing Calculator end  */
+
+    /* Request quote starts*/
+    .request-box p,
+    .request-btn,
+    .demo p,
+    .btn-book {
+        line-height: 1.2rem;
+        font-size: 12px;
+    }
+    /* Request quote end  */
+
+    /* Contact starts*/
+    .contact .info-box h3 {
+        font-size: 15px;
+    }
+
+    .contact .info-box p {
+        font-size: 14px;
+    }
+    /* Contact end  */
+
+    /* Footer starts */
+    footer.nb-footer .footer-info-single .title {
+        font-size: 14px;
+    }
+
+    footer.nb-footer .footer-info-single ul li a {
+        font-size: 13px;
+    }
+    /* Footer end  */
+}
+
+
+/* This media query is for features section  */
+@media only screen and (max-width: 768px) {
+
+.card-body {
+    padding: 0.5em 1.2em;
+}
+
+.card-body .card-text {
+    margin: 0;
+}
+
+.card img {
+    width: 18%;
+}
+}
+
+@media only screen and (max-width: 1200px) {
+.card {
+    margin: 1rem auto;
+}
+}
+
+@media only screen and (max-width: 500px) {
+
+.card-body{
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+.card-text{
+    font-size: 13px;
+}
+
+.card img {
+    width: 30%;
+    display: none;
+}
+
+.padding-0{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+.card img {
+    display: none;
+}
+}

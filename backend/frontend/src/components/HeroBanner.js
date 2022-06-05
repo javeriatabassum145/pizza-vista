@@ -4,6 +4,7 @@ import Branches from "./Branches";
 import Footer from "./Footer";
 import "./HeroBanner.css";
 
+
 const HeroBanner = () => {
   return (
     <>
@@ -13,7 +14,7 @@ const HeroBanner = () => {
         {/* <!-- Banner text Left side --> */}
         <div className="hero-banner-text">
           <div className="banner-heading" data-aos="fade-right">
-            <span className="hot mx-5">Hot &amp; Spicy</span>
+            <span className="hot mx-lg-5 mx-md-3">Hot &amp; Spicy</span>
             <br />
             <span className="pizza-heading">Pizza</span>
             <br />

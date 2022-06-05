@@ -36,22 +36,6 @@
     z-index: 0;
 }
 
-.rotate {
-    animation: rotation 100s infinite linear;
-    /* transform: rotate(180deg); */
-
-  }
-  
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
-
-
 .banner-heading {
     font-family: 'Roboto';
     letter-spacing: 4px;
@@ -78,5 +62,155 @@
     text-decoration: none;
     color: var(--main_color);
 
+}
+
+@media only screen and (max-width: 1000px) and (min-width:500px) {
+    .hot{
+        font-size: 25px;
+    }
+    .pizza-heading{
+        font-size: 90px;
+    }
+
+    .off{
+        font-size: 35px;
+
+    }
+    /* Hero Banner starts */
+    .hero-picture {
+
+        margin: 2rem -50rem 0rem 3rem;
+    }
+
+    .hero-banner-text {
+        width: 300px;
+        height: 400px;
+        margin: 9rem 0rem 1rem 2rem;
+    }
+
+    .btn-hero-banner {
+        padding: 0.8rem 2rem;
+    }
+
+    .btn-hero-banner {
+        font-size: small;
+        letter-spacing: 0px;
+        font-weight: 200;
+    }
+    /* Hero Banner end  */
+}
+
+@media only screen and (max-width:500px) {
+
+    /* Hero-banner starts */
+    .banner {
+        height: 600px;
+    }
+
+    .hero-banner-text {
+        width: 300px;
+        height: 400px;
+        margin: 7rem 2rem 0rem 3rem;
+        text-align: center;
+    }
+
+    .hot{
+        font-size: 28px;
+    }
+    .pizza-heading{
+        font-size: 100px;
+    }
+
+    .off{
+        font-size: 40px;
+
+    }
+
+    .hero-picture {
+        display: none;
+    }
+
+    .btn-hero-banner {
+        padding: 0.8rem 2rem;
+    }
+
+    .btn-hero-banner {
+        font-size: small;
+        letter-spacing: 0px;
+        font-weight: 200;
+    }
+    /* Hero Banner end  */
+
+}
+
+@media only screen and (max-width:650px) {
+
+    .about-container {
+        margin: -30px 2.5rem;
+    }
+
+    .about-text {
+        font-size: 14px;
+        font-weight: 150;
+        line-height: 1.5rem;
+        padding: 0rem 0.2rem;
+    }
+
+    /* Section css starts  */
+    .section-header p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .section-header {
+        padding-bottom: 30px;
+    }
+
+}
+
+@media only screen and (max-width:400px) {
+
+    /* Navbar starts */
+    .navbar img {
+        width: 5rem;
+    }
+    /* Navbar end  */
+
+    /* Hero-banner  */
+    .banner {
+        height: 600px;
+    }
+
+    .hero-banner-text {
+        width: 300px;
+        height: 400px;
+        margin: 9rem 1rem 0rem 2rem;
+    }
+
+    .hero-picture {
+        display: none;
+    }
+
+    .banner-heading {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .banner-sub-heading {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .btn-hero-banner {
+        padding: 0.8rem 2rem;
+        margin-left: 0px;
+    }
+
+    .btn-hero-banner {
+        font-size: 1rem;
+        letter-spacing: 0px;
+        font-weight: 200;
+    }
+    /* Hero Banner end  */
 }
 
