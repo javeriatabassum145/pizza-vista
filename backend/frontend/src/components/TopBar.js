@@ -90,9 +90,9 @@ const TopBar = () => {
                     class="dropdown-menu open"
                     aria-labelledby="dropdownMenuLink"
                   >
-                    <a class="dropdown-item" href="#">
+                    {/* <a class="dropdown-item" href="#">
                       Order
-                    </a>
+                    </a> */}
                     <a
                       class="dropdown-item"
                       onClick={() => {
